@@ -45,4 +45,36 @@ for (j=5; j > i; j--) {
     }
     result += '\n'
 }
-console.log(result)
+
+var x = new Array()
+
+var funcion = function () {
+
+}
+
+var funcion2 = () => {
+
+} 
+
+var nombres = [
+    '56',
+    '52',
+    '54',
+    '50'
+]
+
+var listaOrdenada = nombres.sort((a, b) => {
+    return a - b
+})
+
+console.log(listaOrdenada)
+
+function mostrarNombre (name) {
+    console.log('tu nombre es: ', name)
+}
+
+nombres.forEach(mostrarNombre)
+
+nombres.forEach(() => {
+
+})

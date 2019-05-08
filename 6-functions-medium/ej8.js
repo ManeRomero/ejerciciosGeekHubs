@@ -11,8 +11,20 @@
 
 let sumaDesdeHasta = (desde, hasta) => {
     let sumatorio = 0;
-    // Aquí tu código.  Desde aquí:
-
+    // Aquí tu código.  Desde aquí:    
+    if (typeof desde === 'number' && typeof hasta === 'number') {
+        if (desde > hasta) {
+            var fake = 0
+            fake = desde
+            desde = hasta
+            hasta = fake
+        }        
+        for(var i = desde; i <= hasta; i++) {
+            sumatorio += i
+        }
+    } else {
+        throw new Error('Debo usar números')
+    }
     // Hasta aquí.
     return sumatorio;
 }
