@@ -7,11 +7,12 @@
 // Ha de pasar los test adjuntados.
 let convierteString = (numero) => {
     // Aquí tu código.  Desde aquí:
-
-    
+    if (typeof numero == 'number'){
+        return String(numero)
+    }
+    return 'Debo ser ejecutada con un numero'
+    }
     // Hasta aquí.
-}
-
 
 let test = require('../test.js');
 //  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput) 

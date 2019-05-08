@@ -7,7 +7,9 @@
 //  convierteEurosEnPesetas(1) === 168 // true
 
 // Aquí tu código
-
+function convierteEurosEnPesetas () {
+    return arguments[0] * 168
+}
 
 // Hasta aquí
 

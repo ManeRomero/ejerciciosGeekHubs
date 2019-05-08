@@ -7,7 +7,13 @@
 //  throw new Error('convierteEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+function convierteEurosEnPesetas () {
+    if (isNaN(arguments[0])){
+        throw new Error('convierteEurosEnPesetas debe recibir un number')
+    } else {
+        return arguments[0] * 168
+    }
+}
 // Hasta aquí
 
 

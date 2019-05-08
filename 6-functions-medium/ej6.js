@@ -6,18 +6,20 @@
 // debe devolver el string 'Debo ser ejecutada con un array'
 // puedes comprobar si es un array con:
 //  typeof array === 'object' && array.length >= 0
-
-
 // Ha de pasar los test adjuntados.
 
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
     // Aquí tu código.  Desde aquí:
-
+    if( typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0 )
+    for (var item of arrayDeStrings) {
+        arrayDeLongitudes.push(item.length)
+    } else {
+        return('Debo ser ejecutada con un array')
+    }
     // Hasta aquí.
     return arrayDeLongitudes
 }
-
 
 let test = require('../test.js');
 test(transformaArrayEnOtraConSusLongitudes, [
@@ -32,3 +34,15 @@ test(transformaArrayEnOtraConSusLongitudes, [
 test(transformaArrayEnOtraConSusLongitudes, [''], 'Debo ser ejecutada con un array');
 test(transformaArrayEnOtraConSusLongitudes, [true], 'Debo ser ejecutada con un array');
 test(transformaArrayEnOtraConSusLongitudes, [{}], 'Debo ser ejecutada con un array');
+
+
+/* PIRÁMIDE INVERTIDA */
+var char = '#'
+var result = ''
+for (i=0; i < 6; i++){
+for (j=5; j > i; j--) {
+        result += char
+    }
+    result += '\n'
+}
+console.log(result)

@@ -10,9 +10,22 @@
 
 let ultimoCaracter = (texto) => {
     // Aquí tu código.  Desde aquí:
-  
+    
+    if (typeof texto !== 'string') {
+        return 'Debo ser ejecutada con un string'
+    }
 
+    var last = texto.length - 1
 
+    if (!texto) {
+        return 'Debo ser ejecutada con un string no vacío'
+    } else {
+        var check = texto.charAt(last)
+        if (check == '') {
+            return ' '
+        }
+        return texto.charAt(last)
+    }
     // Hasta aquí.
 }
 

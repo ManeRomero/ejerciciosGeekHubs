@@ -9,7 +9,11 @@
 //  throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+function muestraPorConsolaEurosEnPesetas () {
+    if (isNaN(arguments[0])) {
+        throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number')
+    }
+}
 
 // Hasta aquí
 
